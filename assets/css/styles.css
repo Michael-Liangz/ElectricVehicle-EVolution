@@ -366,8 +366,62 @@ img {
 }
 
 /* TODO =============== BUTTON =============== */
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  font-size: var(--normal-font-size);
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
 
 /* TODO =============== ABOUT =============== */
+.about_container {
+  row-gap: 6rem;
+}
+
+.about_group {
+  position: relative;
+}
+
+.about_img {
+  width: 310px;
+  border-radius: 0.5rem;
+}
+
+.about_card {
+  width: 180px;
+  position: absolute;
+  right: 0;
+  bottom: -2.5rem;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(16px);
+  padding: 1rem 0.75rem;
+  text-align: center;
+  border-radius: 1.25rem;
+}
+
+.about_card-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.about_card-description {
+  font-size: var(--small-font-size);
+}
+
+.about_title {
+  text-align: initial;
+  margin-bottom: 2rem;
+}
+.about_description {
+  margin-bottom: 2rem;
+}
 
 /* TODO =============== POPULAR =============== */
 
@@ -396,4 +450,4 @@ img {
 
 /* * For medium devices */
 
-/* * For large devices */
+/* * For large devices */ ;
