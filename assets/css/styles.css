@@ -27,6 +27,7 @@
   --smaller-font-size: 0.75rem;
 
   /* TODO ========== FONT WEIGHT ========== */
+  --font-semi-medium: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
 
@@ -125,6 +126,12 @@ img {
 .shape_small {
   width: 300px;
   height: 300px;
+}
+
+.shape_smaller {
+  width: 180px;
+  height: 180px;
+  filter: blur(64px);
 }
 
 /* TODO =============== HEADER & NAV =============== */
@@ -262,7 +269,7 @@ img {
 
 .home_elec {
   font-size: var(--small-font-size);
-  font-weight: 400;
+  font-weight: var(--font-semi-medium);
   color: var(--text-color);
   display: inline-flex;
   align-items: center;
@@ -288,7 +295,7 @@ img {
 
 .home_car-name {
   font-size: 0.625rem;
-  font-weight: 400;
+  font-weight: var(--font-semi-medium);
   color: var(--text-color-light);
 }
 
@@ -424,8 +431,99 @@ img {
 }
 
 /* TODO =============== POPULAR =============== */
+.popular_container {
+  padding-top: 1rem;
+}
+
+.popular_card {
+  position: relative;
+  width: 238px;
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+.popular_card .shape_smaller {
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+}
+
+.popular_title,
+.popular_subtitle,
+.popular_img {
+  position: relative;
+}
+
+.popular_title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.popular_subtitle {
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-semi-medium);
+}
+
+.popular_img {
+  width: 160px;
+  margin: 0.75rem 0 1.25rem 1.5rem;
+  transition: 0.3s;
+}
+
+.popular_data {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.popular_data-group {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: var(--smaller-font-size);
+  color: var(--white-color);
+}
+
+.popular_data i {
+  font-size: 1rem;
+}
+
+.popular_price {
+  font-size: var(--h3-font-size);
+}
+
+.popular_button {
+  border: none;
+  outline: none;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.popular_button i {
+  font-size: 1.25rem;
+}
+
+.popular_card:hover .popular_img {
+  transform: translateY(-0.25rem);
+}
 
 /* * Swiper class */
+.swiper-pagination-bullet {
+  background: var(--text-color);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
 
 /* TODO =============== FEATURES =============== */
 
