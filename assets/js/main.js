@@ -64,8 +64,27 @@ let swiperPopular = new Swiper(".popular_container", {
 });
 
 // TODO =============== MIXITUP FILTER FEATURED ===============
+let mixerFeatured = mixitup(".featured_content", {
+  selectors: {
+    target: ".featured_card",
+  },
+  animation: {
+    duration: 300,
+  },
+});
 
 // * Link active featured
+const linkFeatured = document.querySelectorAll(".featured_item");
+
+function activeFeatured() {
+  linkFeatured.forEach((carCategory) =>
+    carCategory.classList.remove("active-featured")
+  );
+  this.classList.add("active-featured");
+}
+linkFeatured.forEach((carCategory) =>
+  carCategory.addEventListener("click", activeFeatured)
+);
 
 // TODO =============== SHOW SCROLL UP ===============
 
