@@ -758,6 +758,23 @@ img {
 }
 
 /* TODO =============== LOGOS =============== */
+.logos_img {
+  width: 40px;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.logos_container {
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 2rem;
+}
+
+.logos_img:hover {
+  opacity: 1;
+}
 
 /* TODO =============== FOOTER =============== */
 
