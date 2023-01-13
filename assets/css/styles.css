@@ -714,6 +714,48 @@ img {
 }
 
 /* TODO =============== OFFER =============== */
+.offer {
+  position: relative;
+}
+
+.offer_container {
+  grid-template-rows: max-content 224px;
+}
+
+.offer_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.offer_data,
+.offer_img {
+  position: relative;
+}
+
+.offer_data {
+  text-align: center;
+}
+
+.offer_title {
+  margin-bottom: 2rem;
+}
+
+.offer_description {
+  margin-bottom: 3rem;
+}
+
+.offer_img {
+  position: absolute;
+  max-width: initial;
+  width: 400px;
+  bottom: 2rem;
+  right: -5.5rem;
+}
 
 /* TODO =============== LOGOS =============== */
 
