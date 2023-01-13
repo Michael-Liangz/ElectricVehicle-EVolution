@@ -777,6 +777,91 @@ img {
 }
 
 /* TODO =============== FOOTER =============== */
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer .shape_big,
+.footer .shape_small {
+  position: absolute;
+}
+
+.footer .shape_big {
+  width: 300px;
+  height: 300px;
+  left: -12rem;
+  top: 6rem;
+}
+
+.footer .shape_small {
+  right: -13rem;
+  bottom: -6rem;
+}
+
+.footer_container {
+  row-gap: 2.5rem;
+  position: relative;
+}
+
+.footer_logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  color: var(--title-color);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1.25rem;
+  transition: 0.3s;
+}
+
+.footer_logo i {
+  font-size: 1.5rem;
+  font-weight: var(--font-medium);
+}
+
+.footer_logo:hover {
+  color: var(--first-color);
+}
+
+.footer_title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.footer_link,
+.footer_social-link {
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.footer_link:hover,
+.footer_social-link:hover {
+  color: var(--title-color);
+}
+
+.footer_social {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.footer_social-link {
+  font-size: 1.25rem;
+}
+
+.footer_copy {
+  display: block;
+  margin-top: 4.5rem;
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
 
 /* TODO =============== SCROLL BAR =============== */
 
