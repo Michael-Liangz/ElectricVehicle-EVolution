@@ -240,6 +240,9 @@ img {
 }
 
 /* * Active link */
+.active-link {
+  color: var(--first-color);
+}
 
 /* TODO =============== HOME =============== */
 .home {
@@ -855,19 +858,55 @@ img {
   font-size: 1.25rem;
 }
 
-.footer_copy {
+/* ? Copyright license */
+/* .footer_copy {
   display: block;
   margin-top: 4.5rem;
   text-align: center;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
-}
+} */
 
 /* TODO =============== SCROLL BAR =============== */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: hsl(219, 4%, 16%);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(219, 4%, 24%);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(219, 4%, 32%);
+}
 
 /* TODO =============== SCROLL UP =============== */
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(16px);
+  display: inline-flex;
+  padding: 0.45rem;
+  border-radius: 0.5rem;
+  font-size: 1.15rem;
+  color: var(--white-color);
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+}
 
 /* * Show Scroll Up*/
+.show-scroll {
+  bottom: 0.3rem;
+}
 
 /* TODO =============== BREAKPOINTS =============== */
 /* * For small devices */
