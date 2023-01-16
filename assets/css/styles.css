@@ -910,7 +910,292 @@ img {
 
 /* TODO =============== BREAKPOINTS =============== */
 /* * For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .home_car {
+    column-gap: 2rem;
+  }
+
+  .about_card {
+    width: 150px;
+  }
+
+  .offer_container {
+    grid-template-rows: max-content 180px;
+  }
+
+  .offer_img {
+    width: 340px;
+  }
+
+  .logos_container {
+    gap: 2.5rem;
+  }
+}
 
 /* * For medium devices */
+@media screen and (min-width: 576px) {
+  .about_group {
+    width: 350px;
+    justify-self: center;
+  }
 
-/* * For large devices */ ;
+  .features_map {
+    left: 0;
+    right: 0;
+  }
+
+  .featured_content {
+    grid-template-columns: repeat(2, 228px);
+  }
+
+  .offer_container {
+    grid-template-rows: initial;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+  }
+
+  .offer_img {
+    position: relative;
+    bottom: initial;
+    right: initial;
+  }
+
+  .offer_data {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .section {
+    padding: 7rem 0 2rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav_toggle,
+  .nav_close {
+    display: none;
+  }
+
+  .nav_list {
+    flex-direction: row;
+    column-gap: 3rem;
+    padding-top: 0;
+  }
+
+  .nav_link {
+    font-size: var(--normal-font-size);
+    text-transform: initial;
+  }
+
+  .about_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logos_container {
+    gap: 4rem 8rem;
+  }
+
+  .footer_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* * For large devices */
+@media screen and (min-width: 1040px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shape_big {
+    width: 500px;
+    height: 500px;
+  }
+
+  .shape_small {
+    height: 400px;
+    width: 400px;
+  }
+
+  .home_container {
+    padding-top: 2rem;
+  }
+
+  .home_img {
+    width: 380px;
+  }
+
+  .home_car {
+    column-gap: 7rem;
+  }
+
+  .home_car-icon {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .about_container {
+    column-gap: 6rem;
+    align-items: center;
+  }
+
+  .about_group,
+  .about_img {
+    width: 480px;
+  }
+
+  .about_card {
+    width: 198px;
+    padding: 1rem 1.25rem;
+  }
+
+  .about_description {
+    padding-right: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .popular_container {
+    width: 875px;
+    padding-top: 3rem;
+  }
+
+  .popular_card {
+    width: 258px;
+    border-radius: 1.25rem;
+    margin-bottom: 5rem;
+  }
+
+  .popular_img {
+    width: 180px;
+    margin: 0.75rem 0 1.25rem 2rem;
+  }
+
+  .featured_container {
+    padding: 2rem 0 3rem;
+  }
+
+  .featured_img {
+    width: 200px;
+  }
+
+  .featured_card {
+    width: 127px;
+    padding: 0.75rem 2.5rem;
+  }
+
+  .features_card-1 {
+    left: -1rem;
+  }
+
+  .features_card-2 {
+    right: -2.5rem;
+  }
+
+  .features_card-3 {
+    /* bottom: 7rem; */
+    left: -1rem;
+  }
+
+  .features_map {
+    width: 650px;
+    top: 11rem;
+  }
+
+  .featured_container {
+    padding-bottom: 2.5rem;
+  }
+
+  .featured_filters {
+    column-gap: 2rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .featured_item {
+    width: 52px;
+    height: 52px;
+  }
+
+  .featured_item img {
+    width: 2rem;
+  }
+
+  .featured_content {
+    grid-template-columns: repeat(3, 248px);
+    gap: 4rem;
+  }
+
+  .offer_container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .offer_data,
+  .offer_title {
+    text-align: initial;
+  }
+
+  .offer_data {
+    margin-bottom: 0;
+  }
+
+  .offer_description {
+    padding-right: 6rem;
+  }
+
+  .offer_img {
+    width: 450px;
+  }
+
+  .logos_container {
+    grid-template-columns: repeat(6, max-content);
+  }
+
+  .logos_img {
+    width: 50px;
+  }
+
+  .footer_container {
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
+  }
+
+  .footer_logo {
+    column-gap: 0.5rem;
+  }
+
+  .footer_logo i {
+    font-size: 2rem;
+  }
+
+  .footer_title {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer_links {
+    row-gap: 0.75rem;
+  }
+
+  .footer_social-link {
+    font-size: 1.5rem;
+  }
+
+  /* ? Copyright lisence */
+  /* .footer_copy {
+    margin-top: 8rem;
+    padding-bottom: 1rem;
+  } */
+
+  .scrollup {
+    right: 3rem;
+  }
+}
