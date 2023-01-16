@@ -910,7 +910,7 @@ img {
 
 /* TODO =============== BREAKPOINTS =============== */
 /* * For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -922,6 +922,11 @@ img {
 
   .about_card {
     width: 150px;
+  }
+
+  .popular_card img {
+    width: 15rem;
+    margin-left: 2rem;
   }
 
   .offer_container {
@@ -953,6 +958,10 @@ img {
     grid-template-columns: repeat(2, 228px);
   }
 
+  .popular_card img {
+    width: auto;
+  }
+
   .offer_container {
     grid-template-rows: initial;
     grid-template-columns: 0.5fr;
@@ -963,6 +972,7 @@ img {
     position: relative;
     bottom: initial;
     right: initial;
+    /* margin-right: 5rem; */
   }
 
   .offer_data {
@@ -1071,11 +1081,13 @@ img {
     width: 258px;
     border-radius: 1.25rem;
     margin-bottom: 5rem;
+    /* grid-template-columns: repeat(3, 1fr); */
   }
 
-  .popular_img {
-    width: 180px;
-    margin: 0.75rem 0 1.25rem 2rem;
+  .popular_card img {
+    width: auto;
+    /* margin: 0.75rem 0 1.25rem 2rem; */
+    margin-left: 10rem;
   }
 
   .featured_container {
@@ -1087,7 +1099,7 @@ img {
   }
 
   .featured_card {
-    width: 127px;
+    width: auto;
     padding: 0.75rem 2.5rem;
   }
 
@@ -1146,6 +1158,7 @@ img {
 
   .offer_data {
     margin-bottom: 0;
+    margin-left: 5rem;
   }
 
   .offer_description {
